@@ -1,0 +1,45 @@
+ Git --version 
+ Git config  --global user.name “manish” 
+ Git config --global user.email 
+“manishky2504@gmail.com” 
+ Git config --list 
+
+
+  mkdir GitPractice 
+ cd GitPractice 
+ git init 
+ echo “hello git”>file.txt 
+git status 
+
+git add file.txt 
+ git commit -m “First commit”
+
+
+  git log 
+ git log  --oneline 
+ git status 
+ git add file.txt 
+ git commit -m “First commit” 
+
+ branch
+
+ git branch 
+git branch branch1 
+ git branch
+git checkout branch1
+
+git merge branch1
+git merge master
+
+merge
+git checkout master 
+ echo "hello from main master">message.txt 
+ git add message.txt 
+ git commit -m "merging commit" 
+ git checkout branch1 
+ echo "hello from branch1">message.txt 
+ git add message.txt 
+ git commit -m "merging commit" 
+ git merge branch1 
+ git status 
+ git log --oneline --graph –all 
